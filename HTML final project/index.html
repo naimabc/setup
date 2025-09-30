@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Quiz</title>
+    <style>
+        body{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            background-color:rgb(217, 217, 247);
+            color:rgb(100, 100, 139)
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>What color is your personality?</h1>
+    <h3>Take this quiz to find out!</h3>
+    <img src="images/colors.jpg" width="200">
+    <br>
+    <br>
+
+    <form action="results.html" method="get">
+
+        <!--name and email-->
+        <label for="namefield"><b>Name:</b></label>
+        <input type="text" id="namefield" name="name" placeholder="your name">
+
+        <br>
+        <br>
+
+        <label for="emailfield"><b>Email:</b></label>
+        <input type="email" id="emailfield" name="email" placeholder="your email">
+
+        <br>
+        <br>
+
+        <!--favorite animal-->
+        <label for="color"><b>What is your favorite animal?</b></label> 
+        <select name="favcolor" id="color">
+            <option value="cat">cat</option>
+            <option value="dog">dog</option>
+            <option value="bird">bird</option>
+            <option value="fish">fish</option>
+            <option value="tiger">tiger</option>
+            <option value="dolphin">dolphin</option>
+            <option value="elephant">elephant</option>
+            <option value="owl">owl</option>
+            <option value="panda">panda</option>
+            <option value="other">other</option>
+        </select>
+
+        <br>
+        <br>
+
+        <!--favorite activity-->
+        <b>How would you rather spend your weekend?</b>
+        <br>
+        <input type="radio" id="read" name="favactivity" value="read">
+        <label for="read">Staying at home and reading</label>
+        <br>
+        <input type="radio" id="friends" name="favactivity" value="friends">
+        <label for="friends">Going out with friends</label>
+        <br>
+        <input type="radio" id="hike" name="favactivity" value="hike">
+        <label for="hike">Going on a hike</label>
+        <br>
+        <input type="radio" id="sports" name="favactivity" value="sports">
+        <label for="sports">Playing sports</label>
+        <br>
+        <input type="radio" id="art" name="favactivity" value="art">
+        <label for="art">Drawing or painting</label>
+        <br>
+        <input type="radio" id="work" name="favactivity" value="work">
+        <label for="work">Catching up on work</label>
+        
+        <br>
+        <br>
+
+        <!--dream house-->
+        <b>What would your dream house be?</b>
+        <br>
+        <input type="radio" id="apartment" name="dreamhouse" value="city">
+        <label for="city">An apartment in a big city</label>
+        <br>
+        <input type="radio" id="woods" name="dreamhouse" value="woods">
+        <label for="woods">A cabin in the woods</label>
+        <br>
+        <input type="radio" id="beach" name="dreamhouse" value="beach">
+        <label for="beach">A house on the beach</label>
+        <br>
+        <input type="radio" id="suburbs" name="dreamhouse" value="suburbs">
+        <label for="suburbs">A suburban townhouse</label>
+        <br>
+        <input type="radio" id="mountain" name="dreamhouse" value="mountain">
+        <label for="mountain">A house in the mountains</label>
+
+        <br>
+        <br>
+        <br>
+
+
+        <label for="commentfield"><b>Any comments?</b></label>
+        <br>
+        <br>
+        <textarea name="comments" id="commentfield" placeholder="type comments here"></textarea>
+
+        <br>
+        <br>
+
+        <input type="submit">
+
+    </form>
+</body>
+</html>
